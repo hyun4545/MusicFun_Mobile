@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bottom_layout_gradient12"
+        android:padding="2dp"
+        android:layout_margin="5dp">
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+           >
+        <TextView
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView4"
+            android:textSize="15sp"
+            android:padding="10dp"
+
+            android:scrollHorizontally="true"
+            />
+</HorizontalScrollView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/textView5"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+</LinearLayout>

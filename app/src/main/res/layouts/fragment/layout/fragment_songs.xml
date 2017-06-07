@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/song_container"
+    tools:context="com.example.myungjong.musicfun.Fragment.SongsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listView3" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:theme="@style/ProgressBarColorCustom1"
+        android:progressDrawable="@drawable/bottom_layout_gradient1"
+        android:layout_gravity="center"
+        android:id="@+id/list_loader" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="無搜尋結果"
+        android:id="@+id/search_text"
+        android:layout_gravity="center_horizontal|top"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="目前尚無歌曲"
+        android:id="@+id/null_text"
+        android:layout_gravity="center_horizontal|top"
+        android:visibility="invisible"
+        tools:layout_marginTop="30dp"
+        android:textColor="@color/gradient_bp"
+        android:textSize="18sp"
+        android:paddingTop="30dp" />
+
+</FrameLayout>

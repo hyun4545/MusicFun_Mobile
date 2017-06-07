@@ -1,0 +1,47 @@
+<resources>
+    <style name="Theme.Transparent" parent="Theme.AppCompat">
+
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/colorOverlay</item>
+
+    </style>
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/gradient_bp</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyProgressTheme" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:elevation">0dp</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="EditTextColorCustom" parent="@style/Widget.AppCompat.EditText">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">#83abfa</item>
+    </style>
+    <style name="ProgressBarColorCustom" parent="@style/Base.Widget.AppCompat.ProgressBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">#d3ffffff</item>
+    </style>
+    <style name="SeekBarColorCustom" parent="@style/Base.Widget.AppCompat.SeekBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">#d30f90d6</item>
+    </style>
+    <style name="ProgressBarColorCustom1" parent="@style/Base.Widget.AppCompat.ProgressBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">#d3949494</item>
+    </style>
+</resources>

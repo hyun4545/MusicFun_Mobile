@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#4395cb</color>
+    <color name="colorAccent">#4395cb</color>
+    <color name="gradient_bb">#55f4ff</color>
+    <color name="gradient_bp">#83abfa</color>
+    <color name="gradient_pp">#9870ed</color>
+    <color name="colorOverlay">#4cffffff</color>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="0dp"
+    tools:context="com.example.myungjong.musicfun.Activity.MainActivity"
+    android:weightSum="1"
+    android:id="@+id/root"
+
+    android:layout_margin="0dp">
+    <android.support.design.widget.AppBarLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow"
+            android:textAlignment="center"
+            android:foregroundGravity="center_vertical"
+            android:alpha="1">
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="MusicFun"
+                android:textColor="#888"/>
+        </android.support.v7.widget.Toolbar>
+
+        <!--            "
+-->
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.01">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:paddingTop="55dp"
+            android:paddingBottom="0dp" />
+
+        <eightbitlab.com.blurview.BlurView
+            android:id="@+id/blurView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineProvider="bounds"
+            app:blurOverlayColor="@color/colorOverlay"
+            >
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+
+                android:background="@drawable/bottom_layout_gradient12"
+                app:tabBackground="@drawable/tab_item"
+                app:tabTextColor="#ffffff"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabSelectedTextColor="#ffffff"
+                android:layout_height="55dp" />
+        </eightbitlab.com.blurview.BlurView>
+    </FrameLayout>
+
+
+    <include layout="@layout/bottom_palyer"
+
+        android:layout_width="fill_parent"
+        android:id="@+id/bottom_layout"
+        android:layout_height="70dp"></include>
+
+</LinearLayout>

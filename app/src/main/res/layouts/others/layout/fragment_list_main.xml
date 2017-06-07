@@ -1,0 +1,51 @@
+<LinearLayout
+    android:clickable="false"
+    android:orientation="vertical"
+    android:id="@+id/fragment_list2"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:visibility="visible"
+            android:layout_centerInParent="true"
+            android:theme="@style/ProgressBarColorCustom1"
+            android:progressDrawable="@drawable/bottom_layout_gradient1"
+            android:layout_gravity="center"
+            android:id="@+id/list_loader" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:id="@+id/songList" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <Button
+            android:text="新增清單"
+            android:id="@+id/addList"
+            android:textColor="@android:color/white"
+            android:background="@drawable/radius_stroke"
+
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

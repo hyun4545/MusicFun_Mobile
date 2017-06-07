@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.example.myungjong.musicfun.Activity.Main2Activity"
+    android:weightSum="1">
+    <LinearLayout
+        android:background="@drawable/bottom_layout_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        android:id="@+id/view"
+        android:gravity="bottom">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:textAlignment="center"
+        android:foregroundGravity="center_vertical"
+        android:alpha="1">
+
+    </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/view"
+        android:layout_alignEnd="@+id/listView"
+        android:id="@+id/select_all_box"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <!---->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="全選"
+            android:id="@+id/textView3"
+            android:paddingRight="15dp"
+           />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_radio_button_unchecked_black_24px"
+            android:id="@+id/all_select"
+            android:clickable="true"
+            android:focusable="true"
+           />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/select_all_box" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="找不到搜尋結果"
+        android:id="@+id/upload_search_text"
+        android:layout_alignTop="@+id/listView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:visibility="invisible"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="目前尚無歌曲"
+        android:id="@+id/upload_show_text"
+        android:layout_alignTop="@+id/listView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/select_count"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_layout_gradient"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

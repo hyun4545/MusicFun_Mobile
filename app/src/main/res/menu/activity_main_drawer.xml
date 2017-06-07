@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@drawable/ic_cloud_upload_black_24dp"
+            android:title="上傳檔案" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="登出" />
+        <!--item
+            android:id="@+id/nav_member"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="會員專區" /-->
+
+    </group>
+
+
+
+
+
+
+
+
+</menu>

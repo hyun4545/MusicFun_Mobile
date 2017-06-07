@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="#00ffffff"
+    android:id="@+id/list_body"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/music_title"
+                    android:textSize="18sp"
+                    android:padding="6dp"
+                    android:scrollHorizontally="true"
+                    android:textColor="#898989" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="New Text"
+                    android:id="@+id/music_author"
+                    android:textSize="13dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="#dfa8a8a8" />
+            </LinearLayout>
+
+            <Button
+                android:stateListAnimator="@null"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/list_menu"
+                android:background="#00ffffff"
+                android:drawableEnd="@drawable/ic_more_vert_black_48px"
+                android:layout_weight="1"
+                android:paddingRight="15dp"
+               />
+
+        </LinearLayout>
+
